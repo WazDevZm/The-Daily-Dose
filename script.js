@@ -35,7 +35,7 @@ askAIButton.addEventListener("click", async () => {
     return;
   }
 
-  const response = await fetch("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", {
+  const response = await fetch("https://api.openai.com/v1/completions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
