@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bible Study Web App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./holy-bible_9975864.png" type="image/x-icon">
+</head>
+<body>
+  <div class="welcome-screen">
+    <h1>Welcome to Bible Study</h1>
+    <p>Explore the Word of God with the help of AI insights.</p>
+    <button id="start-button">Start Now</button>
+  </div>
+
+  <div class="main-app hidden">
+    <h2>Study the Bible</h2>
+    <label for="translation">Choose Translation:</label>
+    <select id="translation">
+      <option value="KJV">King James Version (KJV)</option>
+      <option value="NIV">New International Version (NIV)</option>
+      <option value="ESV">English Standard Version (ESV)</option>
+    </select>
+    <button id="generate-passage">Generate Random Passage</button>
+    <div id="passage-container">
+      <h3 id="passage-title"></h3>
+      <p id="passage-text"></p>
+    </div>
+
+    <div id="ai-insights">
+      <h3>AI Insights</h3>
+      <textarea id="user-question" placeholder="Ask a question about this passage..."></textarea>
+      <button id="ask-ai">Ask AI</button>
+      <p id="ai-response"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
